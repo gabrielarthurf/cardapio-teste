@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desejo por Doce - Cardápio</title>
+    <!-- Adiciona o Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .font-cursive {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+<body class="p-6">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl card-shadow p-8">
+        <!-- Cabeçalho com nome e logo da loja -->
+        <header class="text-center mb-10">
+            <div class="flex flex-col items-center justify-center mb-4">
+                <!-- Novo Logo: círculo rosa com texto cursivo -->
+                <div class="w-48 h-48 bg-pink-200 rounded-full flex items-center justify-center mb-4">
+                    <h1 class="font-cursive text-3xl font-bold text-pink-800 text-center leading-tight">
+                        Desejo por<br>Doce
+                    </h1>
+                </div>
+            </div>
+            <p class="text-center text-gray-500 text-lg">É uma loja que trabalha com matérias primas de qualidade, oferecendo produtos para você que ama um docinho, feito com muito cuidado e carinho.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card do Brigadeiro -->
+            <div id="brigadeiro-card" class="bg-gray-50 rounded-xl overflow-hidden card-shadow">
+                <div class="h-48 w-full">
+                    <!-- Imagem do Brigadeiro - URL fornecida pelo usuário -->
+                    <img src="https://media.discordapp.net/attachments/1239063476517994620/1402054639226064959/Captura_de_tela_2025-08-04_191330.png?ex=689284a2&is=68913322&hm=3a8d6c497ac493587c23f34161cc5999c19eeae41c45caf8e4932419e1c813d5" alt="Brigadeiro Gourmet" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">Brigadeiro</h2>
+                    <p class="text-gray-600 mb-4">Um clássico irresistível, feito com chocolate meio amargo de alta qualidade, proporcionando um sabor intenso e uma textura cremosa.</p>
+                    <p class="text-2xl font-bold text-pink-600">R$ 12,99</p>
+                </div>
+            </div>
+
+            <!-- Card da Palha Italiana -->
+            <div id="palha-italiana-card" class="bg-gray-50 rounded-xl overflow-hidden card-shadow">
+                <div class="h-48 w-full">
+                    <!-- Imagem da Palha Italiana - URL fornecida pelo usuário -->
+                    <img src="https://media.discordapp.net/attachments/1239063476517994620/1402054640551596034/Palha.jpg?ex=689284a3&is=68913323&hm=1f0ecb6dc546a7bb347577ef01437bffdd6ce3243781515d08725a194ffad5fa" alt="Palha Italiana" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">Palha Italiana</h2>
+                    <p class="text-gray-600 mb-4">Uma deliciosa combinação de brigadeiro meio amargo e biscoitos crocantes, com uma textura única e um sabor surpreendente.</p>
+                    <p class="text-2xl font-bold text-pink-600">R$ 7,99</p>
+                </div>
+            </div>
+
+            <!-- Card do Brownie -->
+            <div id="brownie-card" class="bg-gray-50 rounded-xl overflow-hidden card-shadow">
+                <div class="h-48 w-full">
+                    <!-- Imagem do Brownie - URL fornecida pelo usuário -->
+                    <img src="https://media.discordapp.net/attachments/1239063476517994620/1402054638928400534/51-Brownie-scaled.jpg?ex=689284a2&is=68913322&hm=e96c4167ab01df7aa6232607fab621227e35cc1c0f80e2ea9644ff3a5cd5af79" alt="Brownie" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-2">Brownie</h2>
+                    <p class="text-gray-600 mb-4">Um brownie com uma casquinha fina e crocante por fora e incrivelmente macio e úmido por dentro. O sabor do chocolate é intenso e marcante.</p>
+                    <p class="text-2xl font-bold text-pink-600">R$ 13,80</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de contato e pedidos por WhatsApp -->
+        <section class="mt-12 text-center">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4">Faça seu Pedido!</h3>
+            <p class="text-gray-600 mb-6">Estamos prontos para atender você. Faça seu pedido diretamente pelo WhatsApp.</p>
+            <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá! Gostaria de fazer um pedido do cardápio." target="_blank" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out">
+                <!-- SVG do logo do WhatsApp, semelhante ao ícone do iPhone -->
+                <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 1.8.49 3.48 1.34 4.88l-1.3 4.75 4.75-1.3C8.52 21.51 10.2 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zM12 20c-1.66 0-3.23-.45-4.57-1.24l-3.3 1.09 1.1-3.3c-.78-1.34-1.24-2.91-1.24-4.55 0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-7.46c-.08-.12-.17-.13-.37-.23-.2-.1-.5-.15-.7-.18-.2-.03-.4-.03-.57.17-.18.2-.56.68-.68.8-.12.12-.24.13-.45.02-.2-.1-.85-.31-1.61-.99-.6-.53-1.02-1.19-1.21-1.52-.19-.32-.02-.49.16-.68.16-.16.36-.44.49-.66.12-.22.18-.38.12-.5-.06-.12-.2-.3-.4-.73-.2-.42-.4-.36-.57-.36-.18 0-.4-.02-.6-.02-.2 0-.52.07-.8.34-.28.27-1.08 1.05-1.08 2.56 0 1.51 1.11 2.97 1.27 3.19.16.22 2.1 3.23 5.09 4.38 2.99 1.15 3.59.88 4.24.84.65-.04 1.3-.53 1.5-1.06.2-.54.2-.99.14-1.06-.06-.08-.2-.13-.4-.25z"/>
+                </svg>
+                Fazer Pedido
+            </a>
+            <p class="mt-4 text-gray-500 text-sm">Número de exemplo: (11) 99999-9999</p>
+        </section>
+
+    </div>
+</body>
+</html>
